@@ -6,4 +6,4 @@
 ---
 ## 🖊️ 1- Preparativos 🖊️
     Antes de ir para o Docker em si, fui ao VS code para criar o arquivo que executará a mensagem, além da Dockerfile.
-![Primeiro print](Desafios/Prints/1.1.png)
+![Primeiro print](/Desafios/Prints/1.1.png)
