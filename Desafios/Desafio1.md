@@ -6,5 +6,12 @@
 ---
 ## 🖊️ 1- Preparativos 🖊️
     Antes de ir para o Docker em si, fui ao VS code para criar o arquivo que executará a mensagem, além da Dockerfile.
-![Primeiro print](/Desafios/Prints/1.1.png)
+![Primeiro print](/Desafios/Prints/1.1.png)  
+
+    Cria a mensagem em JavaScript.
+
 ![Primeiro print](/Desafios/Prints/1.2.png)
+>`cd /` - Para ir até o diretório Root;  
+>`mkdir dados` - Para criar a página que o Samba utilizará para comunicar as máquinas;  
+>`chmod 777 dados` - Para dar permissões gerais de escrita, leitura e execução da pasta;  
+>`vi /etc/samba/smb.conf` - e então configurei conforme a imagem:
