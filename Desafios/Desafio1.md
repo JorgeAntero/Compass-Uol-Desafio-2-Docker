@@ -11,7 +11,10 @@
     Cria a mensagem em JavaScript.
 
 ![Primeiro print](/Desafios/Prints/1.2.png)
->`cd /` - Para ir até o diretório Root;  
->`mkdir dados` - Para criar a página que o Samba utilizará para comunicar as máquinas;  
->`chmod 777 dados` - Para dar permissões gerais de escrita, leitura e execução da pasta;  
->`vi /etc/samba/smb.conf` - e então configurei conforme a imagem:
+>`FROM node:alpine` - Busca uma imagem do NodeJs baseada em Alpine Linux;  
+>`COPY . /Primeiro` - Copia tudo presente na minha pasta atual para a pasta "Primeiro" dentro da imagem/container;  
+>`WORDKDIR Primeiro` - Indica o diretório de trabalho dentro da imagem/container;  
+>`CMD Primeiro.js` - Diz que em toda a execução, o arquivo com a mensagem que criei será executado na inicialização;
+
+---
+## 📦 2- Criando a imagem e o container 📦
