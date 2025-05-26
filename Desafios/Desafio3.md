@@ -1,18 +1,16 @@
 # - 🔒 Projeto de Bolsas DevSecOps/AWS,  Compass UOL, abril 2025 🔒 -
 
 ## ✅ 0- Objetivo ✅
-    A proposta do terceiro desafio é criar uma imagem Ubuntu no docker, e dentro dela, navegar pelos arquivos e então instalar o pacote Curl.
+    A proposta do terceiro desafio é criar um container com a imagem Ubuntu no docker, e dentro dele, navegar pelos arquivos e então instalar o pacote Curl.
 ---
 ## 💿 1- Criando a imagem 💿
 ![Primeiro print](/Desafios/Prints/3.1.png)  
 
-    Cria a mensagem em JavaScript.
+>`Docker create -it` - Cria um container interativo;  
+>`--name Ubuntu-Desafio` - Apenas nomeia o Container;  
+>`ubuntu bash` - Fala a imagem a ser utilizada, e o comando que será executado quando executar;  
 
 ![Segundo print](/Desafios/Prints/1.2.png)
->`FROM node:alpine` - Busca uma imagem do NodeJs baseada em Alpine Linux;  
->`COPY . /Primeiro` - Copia tudo presente na minha pasta atual para a pasta "Primeiro" dentro da imagem/container;  
->`WORDKDIR Primeiro` - Indica o diretório de trabalho dentro da imagem/container;  
->`CMD Primeiro.js` - Diz que em toda a execução, o arquivo com a mensagem que criei será executado na inicialização;  
 
 ---
 ## 📦 2- Criando a imagem e o container 📦
