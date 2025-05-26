@@ -6,27 +6,26 @@
 ## 💿 1- Criando a imagem 💿
 ![Primeiro print](/Desafios/Prints/3.1.png)  
 
+    Para criar o container com a imagem:
 >`Docker create -it` - Cria um container interativo;  
 >`--name Ubuntu-Desafio` - Apenas nomeia o Container;  
->`ubuntu bash` - Fala a imagem a ser utilizada, e o comando que será executado quando executar;  
+>`ubuntu bash` - Fala a imagem a ser utilizada, e o comando que será executado quando executar;
 
-![Segundo print](/Desafios/Prints/1.2.png)
-
----
-## 📦 2- Criando a imagem e o container 📦
-    Dentro do terminal, fui até a pasta com os arquivos referentes a esse desafio que acabei de mostrar, e então criei a imagem com:
-![Terceiro print](/Desafios/Prints/1.3.png)
->`Docker build -t` - Serve para criar a imagem com uma tag, nesse caso, latest, pois não especifiquei;  
->`meu-echo .` - nomeia a image, e o ponto serve para indicar o diretório atual;  
+    Depois, para iniciar o terminal:
+>`Docker start -i Ubuntu-Desafio` - Starta, interativamente, o nosso container;
 
 ---
-## ⬆️ 2- Rodando ⬆️
-    Após montar a imagem, para executarmos um container e ver se a mensagem funcionou corretamente, executei:
-![Quarto print](/Desafios/Prints/1.4.png)
->`Docker run` - Roda a imagem em um container;  
->`meu-echo` - Especifica qual imagem estamos referenciando;  
+## 📂 2- Navegando 📂
+        Executei alguns comandos básicos de navegação para teste, e então atualizei o sistema e baixei o Curl:
+![Segundo print](/Desafios/Prints/3.2.png)  
+![Terceiro print](/Desafios/Prints/3.3.png)
 
-    Abaixo podemos ver a mensagem já aparecendo no terminal. Com isso, ao verificar o DockerDesktop, na aba de Containers, já podemos ver o nosso container (com um nome genérico, afinal não especificamos nenhum).  
-![Quinto print](/Desafios/Prints/1.5.png)
+---
+## 🛜 3- Curl funcional 🛜
+
+    Para verificar se o Curl estava no sistema, executei o seguinte comando:
+![Quarto print](/Desafios/Prints/3.4.png)
+
+    Como apareceu a lista de comandos, temos a instalação como sucesso!
 
 ---
