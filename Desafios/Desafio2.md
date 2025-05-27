@@ -5,17 +5,11 @@ Para o segundo desafio, foi proposto levantar um container com imagem nginx, em 
 
 ---
 ## 🖊️ 1- Preparativos 🖊️
-O primeiro passo foi criar um volume no docker pelo terminal, utilizando:
+O primeiro passo foi criar um volume no docker pelo terminal, utilizando:  
 
 ![Primeiro print](/Desafios/Prints/2.1.png)  
 
-Após isso, reutilizei a base do arquivo HTML utilizado no [último desafio da Compass](https://github.com/JorgeAntero/Compass-Uol-Desafio-1-Nginx)
-
-![Segundo print](/Desafios/Prints/1.2.png)
->`FROM node:alpine` - Busca uma imagem do NodeJs baseada em Alpine Linux;  
->`COPY . /Primeiro` - Copia tudo presente na minha pasta atual para a pasta "Primeiro" dentro da imagem/container;  
->`WORDKDIR Primeiro` - Indica o diretório de trabalho dentro da imagem/container;  
->`CMD Primeiro.js` - Diz que em toda a execução, o arquivo com a mensagem que criei será executado na inicialização;  
+Após isso, reutilizei a base do arquivo HTML utilizado no [último desafio da Compass](https://github.com/JorgeAntero/Compass-Uol-Desafio-1-Nginx), fazendo pequenas alterações para se enquadrar no novo projeto.  
 
 ---
 ## 📦 2- Criando a imagem e o container 📦
