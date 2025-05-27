@@ -1,6 +1,6 @@
 # - 🔒 Projeto de Bolsas DevSecOps/AWS,  Compass UOL, abril 2025 🔒 -
 
-## 🐳 0- Olá, Docker! 🐳
+## ✅ 0- Nginx em volume ✅
 Para o segundo desafio, foi proposto levantar um container com imagem nginx, em localhost.
 
 ---
@@ -12,23 +12,27 @@ O primeiro passo foi criar um volume no docker pelo terminal, utilizando:
 Após isso, reutilizei a base do arquivo HTML utilizado no [último desafio da Compass](https://github.com/JorgeAntero/Compass-Uol-Desafio-1-Nginx), fazendo pequenas alterações para se enquadrar no novo projeto.  
 
 ---
-## 📦 2- Criando a imagem e o container 📦
-Dentro do terminal, fui até a pasta com os arquivos referentes a esse desafio que acabei de mostrar, e então criei a imagem com:  
+## ✈️ 2- Passando os arquivos para o volume ✈️
+Com o site e o volume prontos, precisei unir os dois, para isso, executei o comando:  
 
-![Terceiro print](/Desafios/Prints/1.3.png)
->`Docker build -t` - Serve para criar a imagem com uma tag, nesse caso, latest, pois não especifiquei;  
->`meu-echo .` - nomeia a image, e o ponto serve para indicar o diretório atual;  
+![Segundo print](/Desafios/Prints/2.2.png)
+>`Docker run --rm` - Executa o container, removendo-o quando ele parar de ser executado;  
+>`-v ${PWD}:/src` - Cria dentro do container, no diretório `/src`, tudo do diretório atual, no nosso caso onde se encontra o `index.html`;
+>`-v arquivos-desafio2:/dest` - Dentro do container, no diretório `/dest`, monta o volume nomeado `arquivos-desafio2`;
+>`busybox` - Imagem leve que utilizaremos para executar o container;
+>`sh -c "cp /src/index.html /dest/"` - Executa como texto no shell o comando entre aspas, que serve para copiar o `index.html` para o `/dest/`;
 
 ---
-## ⬆️ 3- Rodando ⬆️
-Após montar a imagem, para executarmos um container e ver se a mensagem funcionou corretamente, executei:  
+## 💻 3- Rodando 💻
+Agora basta rodar localmente e testar, para isso:  
 
-![Quarto print](/Desafios/Prints/1.4.png)
->`Docker run` - Roda a imagem em um container;  
->`meu-echo` - Especifica qual imagem estamos referenciando;  
+![Terceiro print](/Desafios/Prints/2.3.png)
+>`Docker run -d -p` - Roda o container em segundo plano, na porta `80` do host para a porta `80` do container;  
+>`-v arquivos-desafio2:/usr/share/nginx/html` - Monta o arquivos-desafio2 onde o nginx busca os seus arquivos HTML por padrão;
+>`--name NginxTeste nginx` - Nomeia o nosso container e diz a imagem a ser utilizada;
 
-Abaixo podemos ver a mensagem já aparecendo no terminal. Com isso, ao verificar o DockerDesktop, na aba de Containers, já podemos ver o nosso container (com um nome genérico, afinal não especificamos nenhum).  
+E então, ao colocar `http://localhost` no navegador:  
 
-![Quinto print](/Desafios/Prints/1.5.png)
+![Quinto print](/Desafios/Prints/2.4.png)
 
 ---
