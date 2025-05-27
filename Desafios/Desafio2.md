@@ -9,7 +9,7 @@ O primeiro passo foi criar um volume no docker pelo terminal, utilizando:
 
 ![Primeiro print](/Desafios/Prints/2.1.png)  
 
-Após isso, reutilizei a base do arquivo HTML utilizado no ![último desafio da Compass](https://github.com/JorgeAntero/Compass-Uol-Desafio-1-Nginx)
+Após isso, reutilizei a base do arquivo HTML utilizado no [último desafio da Compass](https://github.com/JorgeAntero/Compass-Uol-Desafio-1-Nginx)
 
 ![Segundo print](/Desafios/Prints/1.2.png)
 >`FROM node:alpine` - Busca uma imagem do NodeJs baseada em Alpine Linux;  
