@@ -28,14 +28,13 @@
 ![Sexto print](/Desafios/Prints/4.6.png)
 
 ---
-## ⬆️ 3- Rodando ⬆️
-    Após montar a imagem, para executarmos um container e ver se a mensagem funcionou corretamente, executei:
+## 🦾 3- Testando permanência dos arquivos 🦾
+    Para testar o que aconteceria caso meu container parasse, derrubei ele no próprio Docker Desktop, e com isso, os arquivos sumiram da conexão do Workbench:
+![Sétimo print](/Desafios/Prints/4.7.png)
+![Oitavo print](/Desafios/Prints/4.8.png)
 
->`Docker run` - Roda a imagem em um container;  
->`meu-echo` - Especifica qual imagem estamos referenciando;  
-
-    Abaixo podemos ver a mensagem já aparecendo no terminal. Com isso, ao verificar o DockerDesktop, na aba de Containers, já podemos ver o nosso container (com um nome genérico, afinal não especificamos nenhum).  
-
+    Porém, ao executar o compose novamente, todos os arquivos ainda estavam lá:
+![Nono print](/Desafios/Prints/4.9.png)
 
 ---
 
