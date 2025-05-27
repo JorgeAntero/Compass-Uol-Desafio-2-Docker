@@ -30,6 +30,7 @@ Após montar a imagem, para executarmos um container e ver se a mensagem funcion
 >`meu-echo` - Especifica qual imagem estamos referenciando;  
 
 Abaixo podemos ver a mensagem já aparecendo no terminal. Com isso, ao verificar o DockerDesktop, na aba de Containers, já podemos ver o nosso container (com um nome genérico, afinal não especificamos nenhum).  
+
 ![Quinto print](/Desafios/Prints/1.5.png)
 
 ---
