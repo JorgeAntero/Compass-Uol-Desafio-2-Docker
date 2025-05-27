@@ -23,7 +23,7 @@
 >`meu-echo .` - nomeia a image, e o ponto serve para indicar o diretório atual;  
 
 ---
-## ⬆️ 2- Rodando ⬆️
+## ⬆️ 3- Rodando ⬆️
     Após montar a imagem, para executarmos um container e ver se a mensagem funcionou corretamente, executei:
 ![Quarto print](/Desafios/Prints/1.4.png)
 >`Docker run` - Roda a imagem em um container;  
