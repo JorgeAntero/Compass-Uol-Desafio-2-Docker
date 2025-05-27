@@ -5,9 +5,9 @@ Para o segundo desafio, foi proposto levantar um container com imagem nginx, em 
 
 ---
 ## 🖊️ 1- Preparativos 🖊️
-Antes de ir para o Docker em si, fui ao VS code para criar o arquivo que executará a mensagem, além da Dockerfile.  
+O primeiro passo foi criar um volume no docker pelo terminal, utilizando:
 
-![Primeiro print](/Desafios/Prints/1.1.png)  
+![Primeiro print](/Desafios/Prints/2.1.png)  
 
 Cria a mensagem em JavaScript.
 
