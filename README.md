@@ -6,7 +6,7 @@
 [1- Olá, Docker! 🐋](Desafios/Desafio1.md)  
 [2- Nginx em volume ✅](Desafios/Desafio2.md)  
 [3- Utilizando o Linux no Container 🐧](Desafios/Desafio3.md)  
-[4- ](Desafios/Desafio3.md)  
+[4- MySQL no Docker 🐬](Desafios/Desafio4.md)  
 [5- Meu nome como variável de ambiente 👾](Desafios/Desafio5.md)  
 [6- ](Desafios/Desafio3.md)  
 [7- ](Desafios/Desafio3.md)  
