@@ -5,8 +5,10 @@ Para o sétimo desafio, foi proposto que utilizasse-mos o docker compose para ex
 
 ---
 ## 🖊️ 1- Preparativos 🖊️
-O primeiro passo foi criar um compose que juntasse os serviços necessários. O meu ficou da seguinte forma: 
-(Para melhor visualização, [clique aqui!](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/blob/main/Desafios/Arquivos%20utilizados/docker-compose-Des7.yaml))
+O primeiro passo foi criar um compose que juntasse os serviços necessários. O meu ficou da seguinte forma:  
+
+(Para melhor visualização, [clique aqui!](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/blob/main/Desafios/Arquivos%20utilizados/docker-compose-Des7.yaml))  
+
       version: '3.9'
     
     services:
@@ -72,39 +74,18 @@ O primeiro passo foi criar um compose que juntasse os serviços necessários. O 
     volumes:
       mongo:     
 
+---
+## 🍃 2- Conclusão 🍃
+Para o próximo passo, executei o compose no Docker Desktop:  
 
+![Primeiro print](/Desafios/Prints/7.1.png) 
 
-![Primeiro print](/Desafios/Prints/6.1.png)  
+Ao olharmos os containers, podemos ver todas as imagens:
 
-Após isso, apaguei o arquivo `Dockerfile.multistage` para fazer o meu próprio, editando o `Dockerfile`. Com isso, editei tirando os comentários:  
+![Segundo print](/Desafios/Prints/7.2.png)  
 
-![Segundo print](/Desafios/Prints/6.2.png)  
+E ao colocar o `localhost:3000` no navegador:
 
-Ao executar a imagem, observei o tamanho dela:  
-
-![Terceiro print](/Desafios/Prints/6.3.png)
+![Terceiro print](/Desafios/Prints/7.3.png)
 
 ---
-## 🤖 2- Otimizando 🤖
-Então montei o multistage:  
-
-![Quarto print](/Desafios/Prints/6.4.png)  
->Linha 1 - `FROM golang:1.19 AS builder` - Cria a imagem e indica ela como builder;  
->Linha 8 - `FROM alpine:latest` - Cria uma imagem com alpine, que é extreamente leve, para o container final;
->`WORKDIR /root/` - O diretório de trabalho será o root;
->`COPY --from=builder /app/docker-gs-ping .` - Copia do builder o binário, que está em `app` para `root`;
->`EXPOSE 8080` - Informa a porta a ser usada;
->`CMD [ "/docker-gs-ping" ]` - Executa o binário criado ao rodar o container;
-
----
-## 😉 3- Resultado 😉
-Em seguida buildei a imagem:  
-
-![Quinto print](/Desafios/Prints/6.5.png)  
-
-E a imagem ficou com o seguinte tamanho:
-
-![Quinto print](/Desafios/Prints/6.6.png)  
-
----
-
