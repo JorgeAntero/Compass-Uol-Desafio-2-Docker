@@ -71,7 +71,7 @@ O primeiro passo foi criar um compose que juntasse os serviços necessários. O 
     
     volumes:
       mongo:  
-
+(para melhor visualização [clique aqui!](Desafios/Arquivos utilizados/docker-compose Des7.yaml)
 
 
 ![Primeiro print](/Desafios/Prints/6.1.png)  
