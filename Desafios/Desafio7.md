@@ -70,8 +70,8 @@ O primeiro passo foi criar um compose que juntasse os serviços necessários. O 
       backedb:
     
     volumes:
-      mongo:  
-![Primeiro print](/Desafios/Arquivos utilizados/docker-compose-Des7.yaml)  
+      mongo:     
+Para melhor visualização, [clique aqui!](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/blob/main/Desafios/Arquivos%20utilizados/docker-compose-Des7.yaml)  
 
 
 ![Primeiro print](/Desafios/Prints/6.1.png)  
