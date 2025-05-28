@@ -9,33 +9,35 @@ Primeiramente, baixei o projeto proposto, que foi o [docker-gs-ping](https://git
 
 ![Primeiro print](/Desafios/Prints/6.1.png)  
 
-Cria a mensagem em JavaScript.
+Após isso, apaguei o arquivo `Dockerfile.multistage` para fazer o meu próprio, editando o `Dockerfile`. Com isso, editei tirando os comentários:  
 
-![Segundo print](/Desafios/Prints/1.2.png)
->`FROM node:alpine` - Busca uma imagem do NodeJs baseada em Alpine Linux;  
->`COPY . /Primeiro` - Copia tudo presente na minha pasta atual para a pasta "Primeiro" dentro da imagem/container;  
->`WORDKDIR Primeiro` - Indica o diretório de trabalho dentro da imagem/container;  
->`CMD Primeiro.js` - Diz que em toda a execução, o arquivo com a mensagem que criei será executado na inicialização;  
+![Segundo print](/Desafios/Prints/6.2.png)  
 
----
-## 📦 2- Criando a imagem e o container 📦
-Dentro do terminal, fui até a pasta com os arquivos referentes a esse desafio que acabei de mostrar, e então criei a imagem com:  
+Ao executar a imagem, observei o tamanho dela:  
 
-![Terceiro print](/Desafios/Prints/1.3.png)
->`Docker build -t` - Serve para criar a imagem com uma tag, nesse caso, latest, pois não especifiquei;  
->`meu-echo .` - nomeia a image, e o ponto serve para indicar o diretório atual;  
+![Terceiro print](/Desafios/Prints/6.3.png)
 
 ---
-## ⬆️ 3- Rodando ⬆️
-Após montar a imagem, para executarmos um container e ver se a mensagem funcionou corretamente, executei:  
+## 🤖 2- Otimizando 🤖
+Então montei o multistage:  
 
-![Quarto print](/Desafios/Prints/1.4.png)
->`Docker run` - Roda a imagem em um container;  
->`meu-echo` - Especifica qual imagem estamos referenciando;  
+![Quarto print](/Desafios/Prints/6.4.png)  
+>Linha 1 - `FROM golang:1.19 AS builder` - Cria a imagem e indica ela como builder;  
+>Linha 8 - `FROM alpine:latest` - Cria uma imagem com alpine, que é extreamente leve, para o container final;
+>`WORKDIR /root/` - O diretório de trabalho será o root;
+>`COPY --from=builder /app/docker-gs-ping .` - Copia do builder o binário, que está em `app` para `root`;
+>`EXPOSE 8080` - Informa a porta a ser usada;
+>`CMD [ "/docker-gs-ping" ]` - Executa o binário criado ao rodar o container;
 
-Abaixo podemos ver a mensagem já aparecendo no terminal. Com isso, ao verificar o DockerDesktop, na aba de Containers, já podemos ver o nosso container (com um nome genérico, afinal não especificamos nenhum).  
+---
+## 😉 3- Resultado 😉
+Em seguida buildei a imagem:  
 
-![Quinto print](/Desafios/Prints/1.5.png)
+![Quinto print](/Desafios/Prints/6.5.png)  
+
+E a imagem ficou com o seguinte tamanho:
+
+![Quinto print](/Desafios/Prints/6.6.png)  
 
 ---
 
