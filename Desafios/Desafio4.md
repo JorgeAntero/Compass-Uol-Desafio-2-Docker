@@ -13,7 +13,7 @@ Após isso, criei um compose para estruturar todo meu serviço:
 
 ![Segundo print](/Desafios/Prints/4.2.png)
 >`desafio-4:` - Toda essa parte serve para criar o meu serviço do banco. Por exemplo, `image: mysql:8.4` define a imagem que nosso container se baseará;  
->`environment:` - Define as variáveis de ambiente padrões usadas para o MySQL;  
+>`environment:` - Define as variáveis de ambiente padrões usadas para o MySQL. Como é apenas um exercício para aprendizado, não me preocupei em separar as variáveis em uma pasta a parte para a segurança;  
 >`ports:` - Indica a porta padrão do MySQL;  
 >`volumes:` - Monta a pasta local do volume que criamos dentro do container;
 
