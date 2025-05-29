@@ -15,6 +15,7 @@ O primeiro passo foi ver quanto o arquivo vulnerável pesa, e quais são suas vu
 ## 🪛 2- Modificações 🪛
 Então fiz as alterações necessárias nos arquivos:  
 ![Terceiro print](/Desafios/Prints/12.3.png)  
+>Todas servem para que esses serviços sejam atualizados para a versão mais recente compatível com o Python 3.9
 
 ![Quarto print](/Desafios/Prints/12.4.png)  
 
