@@ -7,7 +7,7 @@ Para o sétimo desafio, foi proposto que utilizasse-mos o docker compose para ex
 ## 🖊️ 1- Preparativos 🖊️
 O primeiro passo foi criar um compose que juntasse os serviços necessários. O meu ficou da seguinte forma:  
 
-(Para melhor visualização, [clique aqui!](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/blob/main/Desafios/Arquivos%20utilizados/docker-compose-Des7.yaml))  
+(Para melhor visualização, [clique aqui!](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/blob/main/Desafios/Arquivos%20utilizados/Desafio%207/docker-compose.yaml))  
 
       version: '3.9'
     
