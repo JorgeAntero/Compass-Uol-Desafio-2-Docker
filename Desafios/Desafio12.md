@@ -12,21 +12,11 @@ O primeiro passo foi ver quanto o arquivo vulnerável pesa, e quais são suas vu
 ![Segundo print](/Desafios/Prints/12.2.png)  
 
 ---
-## 🔍 2- Análise 🔎
-E então executei o comando
-`docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image --no-progress python:3.9`
->`-v /var/run/docker.sock:/var/run/docker.sock` - Serve para fazer com que o Trivy rode como se estivesse nativamente, enxergando assim o Docker do host;  
->`aquasec/trivy image` - Indica a imagem a ser utilizada, e chama o comando `image` do Trivy;  
->`--no-progress python:3.9` - Deixa a saída mais limpa, e indica a imagem a ser analisada;  
+## 🪛 2- Modificações 🪛
+Então fiz as alterações necessárias nos arquivos:  
+![Terceiro print](/Desafios/Prints/12.3.png)  
 
-E a saída foi:
-
-  
-
-Podemos ver que temos 3 vulnerabilidades com risco alto presente na biblioteca setuptools. Para ver o que cada uma afeta, cliquei no link da própria tabela:  
-A primeira basicamente consome ciclos excessivos da CPU;  
-A segunda tem em sua construção um elemento que pode causar um mau funcionamento do código;  
-A terceira possui em sua construção um elemento que pode causar uma certa confusão de diretórios;  
+![Quarto print](/Desafios/Prints/12.4.png)  
 
 ---
 ## 🕵️ 3- Ações para prevenção 🕵️
