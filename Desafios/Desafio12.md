@@ -1,13 +1,15 @@
 # - 🔒 Projeto de Bolsas DevSecOps/AWS,  Compass UOL, abril 2025 🔒 -
 
 ## ⚡ 0- Corrigindo vulnerabilidades ⚡
-No penultimo desafio, precisei corrigir arquivos com diversas vulnerabilidades. Todos os arquivos, corrigidos e não corrigidos disponíveis ![aqui!](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/tree/main/Desafios/Arquivos%20utilizados/Desafio%2012) 
+No penultimo desafio, precisei corrigir arquivos com diversas vulnerabilidades. Todos os arquivos, corrigidos e não corrigidos disponíveis [aqui!](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/tree/main/Desafios/Arquivos%20utilizados/Desafio%2012) 
 
 ---
-## 🖊️ 1- Preparativos 🖊️
-Ao pesquisar o site oficial do Trivy, descobri como se baixava a imagem pelo próprio Docker, e então executei o comando no Docker Desktop:  
+## ⛔ 1- Vulnerável ⛔
+O primeiro passo foi ver quanto o arquivo vulnerável pesa, e quais são suas vulnerabilidades. Pra isso, utilizei o Trivy:
 
-![Primeiro print](/Desafios/Prints/11.1.png)  
+![Primeiro print](/Desafios/Prints/12.1.png)  
+
+![Segundo print](/Desafios/Prints/12.2.png)  
 
 ---
 ## 🔍 2- Análise 🔎
@@ -19,7 +21,7 @@ E então executei o comando
 
 E a saída foi:
 
-![Segundo print](/Desafios/Prints/11.2.png)  
+  
 
 Podemos ver que temos 3 vulnerabilidades com risco alto presente na biblioteca setuptools. Para ver o que cada uma afeta, cliquei no link da própria tabela:  
 A primeira basicamente consome ciclos excessivos da CPU;  
