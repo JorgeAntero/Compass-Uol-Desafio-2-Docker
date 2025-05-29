@@ -29,6 +29,8 @@ O último requisito era de testar a conectividade com o container, para isso, ut
 
 ![Quinto print](/Desafios/Prints/8.5.png)  
 
+Quando salvei o novo Server, a seguinte tela apareceu demonstrando sucesso:  
 
+![Sexto print](/Desafios/Prints/8.6.png)  
 
 ---
