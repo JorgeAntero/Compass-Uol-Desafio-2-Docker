@@ -21,10 +21,13 @@ E a saída foi:
 
 ![Segundo print](/Desafios/Prints/11.2.png)  
 
-Podemos ver que temos 3 vulnerabilidades com risco alto, e 1 com nível médio presentes nas bibliotecas pip e setuptools.
+Podemos ver que temos 3 vulnerabilidades com risco alto presente na biblioteca setuptools. Para ver o que cada uma afeta, cliquei no link da própria tabela:
+A primeira basicamente consome ciclos excessivos da CPU;  
+A segunda tem em sua construção um elemento que pode causar um mau funcionamento do código;  
+A terceira possui em sua construção um elemento que pode causar uma certa confusão de diretórios;  
 
 ---
 ## 🕵️ 3- Ações para prevenção 🕵️
-Ao analisarmos a tabela que nos aponta as vulnerabilidades, vemos que as duas bibliotecas possuem versões que as corrigem, portanto o método mais eficiente de evitar um ataque seria baixando essas atualizações.
+Ao analisarmos a tabela que nos aponta as vulnerabilidades, vemos que a biblioteca possui versões que as corrigem,.
 
 ---
