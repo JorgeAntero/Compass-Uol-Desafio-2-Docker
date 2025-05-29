@@ -7,20 +7,24 @@ Para o desafio de número 11, precisei analisar com a ferramenta [Trivy](https:/
 ## 🖊️ 1- Preparativos 🖊️
 Ao pesquisar o site oficial do Trivy, descobri como se baixava a imagem pelo próprio Docker, e então executei o comando no Docker Desktop:  
 
-![Primeiro print](/Desafios/Prints/11.1.png) 
-
-E então buildei a imagem:  
-
-![Segundo print](/Desafios/Prints/9.2.png)  
+![Primeiro print](/Desafios/Prints/11.1.png)  
 
 ---
-## ✅ 2- Rodando ✅
-Por fim, rodei o container na porta 8080 para a 80 dele:
+## 🔍 2- Análise 🔎
+E então executei o comando
+`docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy image --no-progress python:3.9`
+>`-v /var/run/docker.sock:/var/run/docker.sock` - Serve para fazer com que o Trivy rode como se estivesse nativamente, enxergando assim o Docker do host;  
+>`aquasec/trivy image` - Indica a imagem a ser utilizada, e chama o comando `image` do Trivy;  
+>`--no-progress python:3.9` - Deixa a saída mais limpa, e indica a imagem a ser analisada;  
 
-![Terceiro print](/Desafios/Prints/9.3.png)
+E a saída foi:
 
-O que me retornou o site corretamente:
+![Segundo print](/Desafios/Prints/11.2.png)  
 
-![Quarto print](/Desafios/Prints/9.4.png)
+Podemos ver que temos 3 vulnerabilidades com risco alto, e 1 com nível médio presentes nas bibliotecas pip e setuptools.
+
+---
+## 🕵️ 3- Ações para prevenção 🕵️
+Ao analisarmos a tabela que nos aponta as vulnerabilidades, vemos que as duas bibliotecas possuem versões que as corrigem, portanto o método mais eficiente de evitar um ataque seria baixando essas atualizações.
 
 ---
