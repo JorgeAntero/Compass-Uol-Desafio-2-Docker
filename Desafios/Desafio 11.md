@@ -5,9 +5,9 @@ Para o desafio de número 11, precisei analisar com a ferramenta [Trivy](https:/
 
 ---
 ## 🖊️ 1- Preparativos 🖊️
-Primeiro, montei um Dockerfile para passar o arquivo html para o nginx:  
+Ao pesquisar o site oficial do Trivy, descobri como se baixava a imagem pelo próprio Docker, e então executei o comando no Docker Desktop:  
 
-![Primeiro print](/Desafios/Prints/9.1.png) 
+![Primeiro print](/Desafios/Prints/11.1.png) 
 
 E então buildei a imagem:  
 
