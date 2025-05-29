@@ -28,6 +28,6 @@ A terceira possui em sua construção um elemento que pode causar uma certa conf
 
 ---
 ## 🕵️ 3- Ações para prevenção 🕵️
-Ao analisarmos a tabela que nos aponta as vulnerabilidades, vemos que a biblioteca possui versões que as corrigem,.
+Ao analisarmos a tabela que nos aponta as vulnerabilidades, vemos que a biblioteca possui versões que as corrigem, portanto uma das soluções possíveis seria atualizar a versão dela.
 
 ---
