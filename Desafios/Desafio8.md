@@ -8,20 +8,27 @@ No desafio de número 8 utilizei o projeto [awesome-compose, postgresql-pgadmin]
 Para começar, criei o compose:  
 
 ![Primeiro print](/Desafios/Prints/8.1.png) 
-O importante aqui é observar as portas padrão do Postgre, além das pastas dos volumes. Além disso, diferente do Desafio 3, coloquei as variáveis de ambiente em um `.env` para segurança dos dados.
+O importante aqui é observar as portas padrão do Postgre e das pastas dos volumes. Além disso, diferente do Desafio 3, coloquei as variáveis de ambiente em um `.env` para segurança dos dados.
 
 ---
-## 🍃 2- Conclusão 🍃
+## ⬆️ 2- Rodando ⬆️
 Para o próximo passo, executei o compose no Docker Desktop:  
 
+![Segundo print](/Desafios/Prints/8.2.png)  
 
 
-Ao olharmos os containers, podemos ver todas as imagens:
+E quando colocamos o endereço escolhido no navegador, já podemos ver o funcionamento:  
 
-![Segundo print](/Desafios/Prints/7.2.png)  
+![Terceiro print](/Desafios/Prints/8.3.png)
 
-E ao colocar o `localhost:3000` no navegador:
+---
+## 🛜 3- Testando a conectividade 🛜
+O último requisito era de testar a conectividade com o container, para isso, utilizei o usuário padrão criado. Dentro do Postgre, cliquei em "Add New Server", depois em "Connection" adicionei os parâmetros escolhidos:  
 
-![Terceiro print](/Desafios/Prints/7.3.png)
+![Quarto print](/Desafios/Prints/8.4.png)  
+
+![Quinto print](/Desafios/Prints/8.5.png)  
+
+
 
 ---
