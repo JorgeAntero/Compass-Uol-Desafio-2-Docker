@@ -21,7 +21,7 @@ E a saída foi:
 
 ![Segundo print](/Desafios/Prints/11.2.png)  
 
-Podemos ver que temos 3 vulnerabilidades com risco alto presente na biblioteca setuptools. Para ver o que cada uma afeta, cliquei no link da própria tabela:
+Podemos ver que temos 3 vulnerabilidades com risco alto presente na biblioteca setuptools. Para ver o que cada uma afeta, cliquei no link da própria tabela:  
 A primeira basicamente consome ciclos excessivos da CPU;  
 A segunda tem em sua construção um elemento que pode causar um mau funcionamento do código;  
 A terceira possui em sua construção um elemento que pode causar uma certa confusão de diretórios;  
