@@ -15,7 +15,7 @@ Depois buildei a imagem:
 
 ---
 ## ⬆️ 2- Rodando ⬆️
-Ao rodar o container, o script imprimiu as informações corretamente como podemos ver ao comparar o horário do meu computador com a saída no terminal:  
+Ao rodar o container, o script imprimiu as informações corretamente, como podemos ver ao comparar o horário do meu computador com a saída no terminal:  
 
 ![Terceiro print](/Desafios/Prints/13.3.png)
 
