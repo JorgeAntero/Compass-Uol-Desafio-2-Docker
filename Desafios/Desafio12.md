@@ -22,7 +22,7 @@ Então fiz as alterações necessárias nos arquivos:
 
 ---
 ## 🛡️ 3- Resultado 🛡️
-Após montarmos a imagem, podemos veer que seu tamanho diminuiu consideravelmente, e as únicas vulnerabilidades presentes são as do Debian:  
+Após montarmos a imagem, podemos ver que seu tamanho diminuiu consideravelmente, e as únicas vulnerabilidades presentes são as do Debian:  
 
 ![Quinto print](/Desafios/Prints/12.5.png)  
 
