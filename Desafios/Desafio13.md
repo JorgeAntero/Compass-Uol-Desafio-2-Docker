@@ -20,15 +20,19 @@ Ao rodar o container, o script imprimiu as informações corretamente como podem
 ![Terceiro print](/Desafios/Prints/13.3.png)
 
 ---
-## 🛜 3- Testando a conectividade 🛜
-O último requisito era de testar a conectividade com o container, para isso, utilizei o usuário padrão criado. Dentro do Postgre, cliquei em "Add New Server", depois em "Connection" adicionei os parâmetros escolhidos:  
+## 👽 3- Extra 👽
+Como um extra, foi pedido que eu upasse o [Desafio 1](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/blob/main/Desafios/Desafio1.md) no DockerHub, pra isso fiz os seguintes passos:
 
-![Quarto print](/Desafios/Prints/8.4.png)  
+buildei a imagem:  
 
-![Quinto print](/Desafios/Prints/8.5.png)  
+![Quarto print](/Desafios/Prints/13.4.png)  
 
-Quando salvei o novo Server, a seguinte tela apareceu demonstrando sucesso:  
+Depois fiz o push para o Hub:
 
-![Sexto print](/Desafios/Prints/8.6.png)  
+![Quinto print](/Desafios/Prints/13.5.png)  
+
+Ao acessar o meu perfil no site, vemos que está tudo certo:
+
+![Sexto print](/Desafios/Prints/13.6.png)  
 
 ---
