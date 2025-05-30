@@ -24,10 +24,10 @@ Então montei o multistage:
 ![Quarto print](/Desafios/Prints/6.4.png)  
 >Linha 1 - `FROM golang:1.19 AS builder` - Cria a imagem e indica ela como builder;  
 >Linha 8 - `FROM alpine:latest` - Cria uma imagem com alpine, que é extreamente leve, para o container final;
->`WORKDIR /root/` - O diretório de trabalho será o root;
->`COPY --from=builder /app/docker-gs-ping .` - Copia do builder o binário, que está em `app` para `root`;
->`EXPOSE 8080` - Informa a porta a ser usada;
->`CMD [ "/docker-gs-ping" ]` - Executa o binário criado ao rodar o container;
+>`WORKDIR /root/` - O diretório de trabalho será o root;  
+>`COPY --from=builder /app/docker-gs-ping .` - Copia do builder o binário, que está em `app` para `root`;  
+>`EXPOSE 8080` - Informa a porta a ser usada;  
+>`CMD [ "/docker-gs-ping" ]` - Executa o binário criado ao rodar o container;  
 
 ---
 ## 😉 3- Resultado 😉
