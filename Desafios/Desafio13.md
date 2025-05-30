@@ -5,21 +5,19 @@ No último desafio precisei criar um Dockerfile que copiasse, com uma imagem Pyt
 
 ---
 ## 🖊️ 1- Preparativos 🖊️
-Para começar, criei o compose:  
+Para começar, criei o Dockerfile:  
 
-![Primeiro print](/Desafios/Prints/8.1.png) 
-O importante aqui é observar as portas padrão do Postgre e das pastas dos volumes. Além disso, diferente do Desafio 3, coloquei as variáveis de ambiente em um `.env` para segurança dos dados.
+![Primeiro print](/Desafios/Prints/13.1.png)  
+
+Depois buildei a imagem:  
+
+![Segundo print](/Desafios/Prints/13.2.png) 
 
 ---
 ## ⬆️ 2- Rodando ⬆️
-Para o próximo passo, executei o compose no Docker Desktop:  
+Ao rodar o container, o script imprimiu as informações corretamente como podemos ver ao comparar o horário do meu computador com a saída no terminal:  
 
-![Segundo print](/Desafios/Prints/8.2.png)  
-
-
-E quando colocamos o endereço escolhido no navegador, já podemos ver o funcionamento:  
-
-![Terceiro print](/Desafios/Prints/8.3.png)
+![Terceiro print](/Desafios/Prints/13.3.png)
 
 ---
 ## 🛜 3- Testando a conectividade 🛜
