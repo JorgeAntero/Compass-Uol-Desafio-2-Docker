@@ -16,23 +16,21 @@ Para isso, criei um servidor que retorna apenas uma mensagem de "Sucesso" ([Cód
 
 ---
 ## 🌀 2- Rodando 🌀
-Então buildei a imagem e rodei o container nas portas 3000 do host e do Docker:
+Então buildei a imagem e rodei o container nas portas 3000 do host e do Docker:  
+
 ![Segundo print](/Desafios/Prints/10.2.png)  
 
-A imagem abaixo demonstra o sucesso:
+A imagem abaixo demonstra que tudo deu certo:
 
 ![Terceiro print](/Desafios/Prints/10.3.png)  
 
-![Quarto print](/Desafios/Prints/12.4.png)  
->Aqui a única diferença é que, para deixar a imagem mais enxuta, utilizei a versão Slim dela.
-
 ---
-## 🛡️ 3- Resultado 🛡️
-Após montarmos a imagem, podemos veer que seu tamanho diminuiu consideravelmente, e as únicas vulnerabilidades presentes são as do Debian:  
+## 👤 3- Verificação de usuário 👤
+Por último, executei o comando `docker exec *nome do container* whoami` para verificar se o usuário estava correto:  
 
-![Quinto print](/Desafios/Prints/12.5.png)  
+![Quarto print](/Desafios/Prints/10.4.png)  
 
-![Sexto print](/Desafios/Prints/12.6.png)
+Sucesso!
 
 ---
 
