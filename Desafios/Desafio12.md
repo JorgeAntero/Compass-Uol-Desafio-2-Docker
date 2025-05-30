@@ -33,8 +33,10 @@ Após montarmos a imagem, podemos ver que seu tamanho diminuiu consideravelmente
 Para melhor segurança, devemos rodar o container com um usuário não-root, pra isso, alterei o Dockerfile:
 
 ![Sétimo print](/Desafios/Prints/12.7.png)  
->Linha 2 - `RUN adduser --system --group --no-create-home --disabled-login jorge` - Cria o grupo e usuário jorge no sistema, de forma que não precise de login;
->Linha 4 - `RUN chown -R jorge:jorge /app` - Garante que meu usuário tenha acesso à pasta app;
+>Linha 2 - `RUN adduser --system --group --no-create-home --disabled-login jorge` - Cria o grupo e usuário jorge no sistema, de forma que não precise de login;  
+>Linha 4 - `RUN chown -R jorge:jorge /app` - Garante que meu usuário tenha acesso à pasta app;  
+
+Com isso, ao verificar o usuário:  
 
 ![Oitavo print](/Desafios/Prints/12.8.png)
 
