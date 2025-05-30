@@ -1,7 +1,7 @@
 # - 🔒 Projeto de Bolsas DevSecOps/AWS,  Compass UOL, abril 2025 🔒 -
 
-## 🐘 0- Compose para Postgre 🐘
-No desafio de número 8 utilizei o projeto [awesome-compose, postgresql-pgadmin](postgresql-pgadmin) com o compose para criar uma imagem Nginx.  
+## 🐍 0- Script Python e Push pro Hub 🐍
+No último desafio precisei criar um Dockerfile que copiasse, com uma imagem Python:3.11-slim, um script em python que imprimisse a data e horas atuais. ([Script nesta página](https://github.com/JorgeAntero/Compass-Uol-Desafio-2-Docker/blob/main/Desafios/Arquivos%20utilizados/Desafio%2013/app.py))
 
 ---
 ## 🖊️ 1- Preparativos 🖊️
